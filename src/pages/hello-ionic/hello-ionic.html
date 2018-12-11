@@ -1,0 +1,49 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Hello Ionic</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+   
+      <ion-card style="width:306px;margin-left:2px;height:140px;background-color:azure" text-right>
+    
+        <ion-card-content style="font-size:50px;margin-top: 50px">
+          {{display}}
+        </ion-card-content>
+      
+      </ion-card>
+  <div>
+    <a ion-button class="smallbtn" (click)="insertNum(1)">1</a>
+    <a ion-button class="smallbtn" (click)="insertNum(2)">2</a>
+    <a ion-button class="smallbtn" (click)="insertNum(3)">3</a>
+    <a ion-button class="smallbtn" (click)="insertNum('+')">+</a><br>
+    <a ion-button class="smallbtn" (click)="insertNum(4)">4</a>
+    <a ion-button class="smallbtn" (click)="insertNum(5)">5</a>
+    <a ion-button class="smallbtn" (click)="insertNum(6)">6</a>
+    <a ion-button class="smallbtn">-</a><br>
+    <a ion-button class="smallbtn" (click)="insertNum(7)">7</a>
+    <a ion-button class="smallbtn" (click)="insertNum(8)">8</a>
+    <a ion-button class="smallbtn" (click)="insertNum(9)">9</a>
+    <a ion-button class="smallbtn">/</a><br>
+    <a ion-button class="smallbtn" (click)="insertNum('.')">.</a>
+    <a ion-button class="smallbtn" (click)="insertNum(0)">0</a>
+    <a ion-button class="smallbtn">*</a>
+    <a ion-button class="smallbtn" (click)="myEquals()">=</a><br>
+    <a ion-button style="width:148px;height: 71px;font-size: 30px" (click)="clearM()">C</a>
+    <a ion-button style="width:148px;height: 71px;font-size: 23px" (click)="backS()">BackSpace</a>
+    
+  <!--- Buttons
+    <a ion-button block>button block</a>
+    <a ion-button full>button full </a>
+    <a ion-button large>button large</a> 
+    <a ion-button small>button small</a>
+    <a ion-button clear>button clear</a>
+    <a ion-button outline>button outline</a> --->
+ </div> 
+
+</ion-content>
